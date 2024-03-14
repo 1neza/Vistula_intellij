@@ -39,11 +39,20 @@ Hints:
 3. Depending on the number of roots in the switch statement, we execute
 specific actions (we calculate x1 or x1 and x2)*/
 //Task_3 Above!
+/*TASK 4 – SUMMARY OF EVEN NUMBERS
+FROM 1 TO 100 - USING A FOR LOOP
+Please write a program that sums even numbers from 1 to 100, you must
+use for loop.*/
+//Task_4 Above!
 
-import java.lang.Math;
-import java.util.Scanner;
+import java.math.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+//import java.util.Scanner;
 public class Program_Control_Statment {
-    public static void main(String [] args){
+    public static void main(String [] args) {
 
 //Task_1
 
@@ -114,7 +123,80 @@ public class Program_Control_Statment {
         Task_2 Done Successfully!*/
 
 //Task_3
+        /*writing a program that will calculate the quadratic equation ax**(2)+bx+c = 0
+    using switch selection statement where a,b and c are real numbers entered from the keyboard.
+    the a, b, c, x1 and x2 should be displayed on the screen with accuracy of two decimal places*/
+
+                /*double a, b, c, x1, x2;
+
+                System.out.println();
+                System.out.println("The system will calculate the Quadratic eqn Ax2+Bx+C= 0, and the use has to Enter A, B and C.");
+                Scanner Scn = new Scanner(System.in);
+                System.out.print("Enter A: ");
+                a = Scn.nextDouble();
+                System.out.print("Enter B: ");
+                b = Scn.nextDouble();
+                System.out.print("Enter C: ");
+                c = Scn.nextDouble();
+                System.out.println();
+                System.out.print("Delta: b**(2)-4(a*c) = ");
+
+//        calculating delta
+                double delta = Math.sqrt(Math.pow(b, 2) - 4 * (a * c));
+                System.out.println(delta);
+                System.out.println();
+                x1 = ((b + Math.sqrt(delta)) / (2 * a));
+                x2 = ((b - Math.sqrt(delta)) / (2 * a));
+                System.out.println("The X1 = (b+sqrt(delta))/(2*a) = (" + b + "+ sqrt(" + delta + "))/(2*" + a + ")= " + x1);
+                System.out.println("The X2 = (b-sqrt(delta))/(2*a) = (" + b + "- sqrt(" + delta + "))/(2*" + a + ")= " + x2);
+                System.out.println("Therefore X1 = " + x1 + " and X2 = " + x2);
+
+                Scn.close();
+
+task_3 Completed successfully! (! problem with some numbers that returns NaN)*/
+
+//TASK_4
+/*SUMMARY OF EVEN NUMBERS FROM 1 TO 100 - USING A FOR LOOP
+Please write a program that sums even numbers from 1 to 100, you must use for loop.*/
+        /*System.out.println();
+        System.out.println("This System will print The summary of Even numbers from 1 to 100.");
+
+        List<Integer> range = new ArrayList<>();
+        int a = 0;
+        for (int i = 1 ; i<=100; i++){
+            if( i%2 == 0 ){
+                range.add(i);
+                a += i;
+            }
+        }
+        System.out.println(range+" These are all even numbers in range 1 to 100");
+        System.out.println("The Sum of these numbers are: "+a);
+        Task_4 Done Successfully!*/
+//Task_5
+/*TASK 5 – FINDING THE BIGGEST AND THE SMALLEST NUMBERS FROM THE SET OF NUMBERS DRAWN BY A LOOP WHILE
+Please write a program which will use the while loop to find the largest and smallest number from
+the set of 10 randomly drawn integers from 1 to 100.
+Hint: In this task, please do not use an array or other collection.*/
+
+//        Random rnd = new Random();
+//        int count = 0;
+//        int large = Integer.MAX_VALUE;
+//        int small = Integer.MIN_VALUE;
+//
+//        while (count < 10){
+//            int rdm = rnd.nextInt(100)+1;
+//            if(rdm>large){
+//                large = rdm;
+//            }
+//            if(rdm<small){
+//                small = rdm;
+//            }
+//            count++;
+//        }
+//
+//        System.out.println();
+//        System.out.println(" The Maximum Number is: "+large);
+//        System.out.println(" The Minimum Number is: "+small);
 
     }
-    
 }
